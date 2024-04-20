@@ -1,0 +1,97 @@
+@font-face {
+    font-family: letra;
+    src: url("fuente/Rubik-VariableFont_wght.ttf");
+}
+
+:root{
+    --color: #00434d;
+}
+
+*{
+    font-family: letra,sans-serif;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    justify-content: center;
+}
+
+/*index*/
+.bienvenida{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+.cerdo{
+    transform: translateX(0) translateY(0);
+}
+
+.mensaje{
+}
+.degradado{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+    background: rgb(0,151,178);
+    background: linear-gradient(90deg, rgba(0,151,178,1) 0%, rgba(89,142,200,1) 100%);
+    border-radius: 24px;
+}
+
+.degradado img{
+    height: 40vh;
+    object-fit: contain;
+}
+
+/*navbar*/
+header,nav,body{
+    display: flex;
+}
+
+h1{
+    color: var(--color);
+    font-size: 4rem;
+}
+
+mark{
+    background-color: inherit;
+    color: #018BA0;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+}
+header a>img{
+    margin: 10px;
+    width: 150px;
+}
+nav{
+    align-items: center;
+    margin-left: 50px;
+    flex-grow: 1;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: var(--color);
+    transition: ease .25s;
+    width: 100%;
+    text-align: center;
+}
+nav a:hover{
+    transition: ease .25s;
+    color: #018BA0;
+    transform: scale(1.1,1.1);
+}
