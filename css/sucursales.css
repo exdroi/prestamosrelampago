@@ -2,7 +2,7 @@
 
 label{
     color: #D27730;
-    font-size: xx-large;
+    font-size: 3rem;
     font-weight: bold;
 }
 label:hover{
@@ -33,11 +33,19 @@ p{
     display: none;
 }
 
+.cont{
+    justify-content: center;
+    width:min(600px,100%);
+}
+
 /*Frame */
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
     padding: 30px;
     width: 50%;
-
 }
 aside{
     width: 50%;
