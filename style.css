@@ -4,7 +4,7 @@
 }
 
 :root{
-    --color: #00434d;
+    --color: #D27730;
 }
 
 *{
@@ -49,7 +49,7 @@ header{
 }
 header a>img{
     margin: 10px;
-    width: 150px;
+    height: 60px;
 }
 nav{
     align-items: center;
@@ -59,7 +59,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: var(--color);
+    color: #00434d;
     transition: ease .25s;
     width: 100%;
     text-align: center;

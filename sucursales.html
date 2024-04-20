@@ -5,9 +5,32 @@
     <title>Title</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sucursales.css">
 </head>
-<body>
 <barra-html src="navbar.html"></barra-html>
-
+<body>
+    <main class="menu">
+        <div onclick="cambiarmapa(1)" class="acordeon"><input type="radio" name="sucursal" id="1er" class="picado"><label for="1er">RELÁMPAGO SAN LUIS SENDERO</label>
+            <div class="menua">
+                <p>Plaza Sendero, Av. Benito Juarez 2005 Estrella De Oriente, San Luis Potosí, San Luis Potosí, CP 78396
+                    Teléfono(s): 444-830-49-20</p>
+            </div>
+        </div>
+        <div onclick="cambiarmapa(2)" class="acordeon"><input type="radio" name="sucursal" id="2er" class="picado"><label for="2er">RELÁMPAGO SAN LUIS CENTRO</label>
+            <div class="menua">
+                <p>Calle Julián De Los Reyes #360, Centro, San Luis Potosí, San Luis Potosí, CP 78000
+                    Teléfono(s): 444-810-06-55</p>
+            </div>
+        </div>
+        <div onclick="cambiarmapa(3)" class="acordeon"><input type="radio" name="sucursal" id="3er" class="picado"><label for="3er">RELÁMPAGO SAN LUIS CITADINA</label>
+            <div class="menua">
+                <p>Interior Plaza Citadina #3600 L-15, Soledad De Graciano Sánchez, San Luis Potosí, San Luis Potosí, CP 78430
+                    Teléfono(s): 818-363-19-65</p>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <iframe id="frame" src="" frameborder=""></iframe>
+    </aside>
 </body>
 </html>

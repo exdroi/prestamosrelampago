@@ -1,0 +1,53 @@
+/*Acordeon*/
+
+label{
+    color: #D27730;
+    font-size: xx-large;
+    font-weight: bold;
+}
+label:hover{
+    cursor: pointer;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.acordeon .menua{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.picado:checked ~ .menua{
+    max-height: 600px;
+    padding: 15px 0px;
+    transition: all 300ms ease;
+}
+
+.picado:checked ~ label{
+    color: #018BA0;
+}
+
+.picado{
+    display: none;
+}
+
+/*Frame */
+main{
+    padding: 30px;
+    width: 50%;
+
+}
+aside{
+    width: 50%;
+}
+iframe{
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+body{
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+}

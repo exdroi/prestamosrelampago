@@ -11,8 +11,6 @@
     transform: translateX(0) translateY(0);
 }
 
-.mensaje{
-}
 .degradado{
     display: flex;
     align-items: center;
