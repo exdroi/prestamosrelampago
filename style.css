@@ -46,6 +46,7 @@ header{
     position: fixed;
     align-items: center;
     background-color: white;
+    z-index: 1;
 }
 header a>img{
     margin: 10px;
