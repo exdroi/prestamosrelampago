@@ -1,5 +1,8 @@
+*{
+}
 .todo{
     display: flex;
+    padding: 1rem;
     flex-direction: row;
     align-items: center;
     width: min(1500px,100%);
@@ -58,4 +61,40 @@ button{
     color: white;
     border: 0;
     border-radius: 24px;
+}
+
+@media only screen and (max-width: 1080px){
+    .todo{
+        margin-top: 80px;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 0;
+        transform: translateX(0);
+        padding:0;
+        width: 100%;
+    }
+    main{
+        padding: 0;
+    }
+    body{
+        height: auto;
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 1rem;
+        width: 75vw;
+    }
+
+    .forms{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
