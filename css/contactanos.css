@@ -1,11 +1,8 @@
-*{
-}
 .todo{
     display: flex;
-    padding: 1rem;
     flex-direction: row;
     align-items: center;
-    width: min(1500px,100%);
+    width: min(1280px,100%);
     margin-left: 50%;
     transform: translateX(-50%);
 }
@@ -22,7 +19,8 @@ img{
 }
 
 main{
-    padding: 1rem;
+    marign: 1rem;
+    width: min(800px,100%);
 }
 
 aside{
@@ -70,11 +68,7 @@ button{
         justify-content: start;
         margin-left: 0;
         transform: translateX(0);
-        padding:0;
         width: 100%;
-    }
-    main{
-        padding: 0;
     }
     body{
         height: auto;
@@ -86,12 +80,11 @@ button{
     aside{
         align-items: center;
         width: 100%;
-        flex-direction: column;
     }
 
     form{
         margin-top: 1rem;
-        width: 75vw;
+        width: 80vw;
     }
 
     .forms{

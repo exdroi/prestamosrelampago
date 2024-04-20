@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sucursales</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -10,6 +11,7 @@
 </head>
 <barra-html src="navbar.html"></barra-html>
 <body>
+    <div class="main">
     <main class="menu">
         <div class="cont">
             <div onclick="cambiarmapa(1)" class="acordeon"><input type="radio" name="sucursal" id="1er" class="picado"><label for="1er">RELÁMPAGO SAN LUIS SENDERO</label>
@@ -35,6 +37,9 @@
     <aside>
         <iframe id="frame" src="" frameborder=""></iframe>
     </aside>
-
+        <div class="boton">
+            <a id="salida" href="https://maps.app.goo.gl/CKPeRmkJ2r2fbgWB7">Ver en Maps</a>
+        </div>
+    </div>
 </body>
 </html>
