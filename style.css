@@ -22,6 +22,7 @@ body{
 /*index*/
 .bienvenida{
     display: flex;
+    width:min(1080px,100%);
     align-items: center;
     padding: 100px;
 }
