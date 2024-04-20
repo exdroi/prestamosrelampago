@@ -21,6 +21,8 @@ body{
 
 /*index*/
 .bienvenida{
+    margin-left: 50%;
+    transform: translateX(-50%);
     display: flex;
     width:min(1080px,100%);
     align-items: center;
