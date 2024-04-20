@@ -22,7 +22,7 @@ p{
 .picado:checked ~ .menua{
     max-height: 600px;
     padding: 15px 0px;
-    transition: all 300ms ease;
+    transition: all ease 1s;
 }
 
 .picado:checked ~ label{
