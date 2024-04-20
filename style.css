@@ -20,35 +20,6 @@ body{
 }
 
 /*index*/
-.bienvenida{
-    margin-left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    width:min(1080px,100%);
-    align-items: center;
-    padding: 100px;
-}
-
-.cerdo{
-    transform: translateX(0) translateY(0);
-}
-
-.mensaje{
-}
-.degradado{
-    display: flex;
-    align-items: center;
-    margin: 50px;
-    padding: 20px;
-    background: rgb(0,151,178);
-    background: linear-gradient(90deg, rgba(0,151,178,1) 0%, rgba(89,142,200,1) 100%);
-    border-radius: 24px;
-}
-
-.degradado img{
-    height: 40vh;
-    object-fit: contain;
-}
 
 /*navbar*/
 header,nav,body{
