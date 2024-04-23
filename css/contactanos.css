@@ -15,7 +15,7 @@ body{
 }
 img{
     height: 3rem;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 main{
@@ -59,6 +59,10 @@ button{
     color: white;
     border: 0;
     border-radius: 24px;
+}
+
+h1,h2,p{
+    margin: 1rem;
 }
 
 @media only screen and (max-width: 1080px){

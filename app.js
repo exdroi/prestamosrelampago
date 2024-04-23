@@ -15,6 +15,8 @@ customElements.define('barra-html',
         }
     });
 
+
+/*cerdito mover*/
 document.addEventListener("mousemove",parallax);
 function parallax(e){
     document.querySelectorAll(".cerdo").forEach(function (move){
@@ -44,4 +46,13 @@ function cambiarmapa(v){
     }
     document.getElementById("frame").src=v;
     document.getElementById("salida").href=w;
+}
+
+function mostrar(){
+    let check = document.querySelector('.box').checked;
+    if (check==true){
+        document.getElementById("nav").classList.add('mostrar');
+    }else{
+        document.getElementById("nav").classList.remove('mostrar');
+    }
 }

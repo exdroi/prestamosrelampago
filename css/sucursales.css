@@ -68,6 +68,8 @@ body{
     display: none;
 }
 
+
+
 @media only screen and (max-width: 1080px) {
     .main{
         flex-direction: column;

@@ -78,3 +78,42 @@ nav a:hover{
     color: #018BA0;
     transform: scale(1.1,1.1);
 }
+
+.box{
+    display: none;
+}
+
+label img{
+    display: none;
+    cursor: pointer;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    header{
+        flex-direction: column;
+    }
+    header nav{
+        display: none;
+    }
+
+    header div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    label img{
+        display: block;
+        margin: 1rem;
+    }
+
+    .mostrar{
+        display: flex;
+        flex-direction: column;
+        height:calc(100vh - 80px);
+        justify-content: space-around;
+        font-size: 2rem;
+        margin-left: 0;
+    }
+}
