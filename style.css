@@ -89,7 +89,7 @@ label img{
     height: 2rem;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 600px) {
     header{
         flex-direction: column;
     }

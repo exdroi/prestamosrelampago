@@ -65,7 +65,7 @@ h1,h2,p{
     margin: 1rem;
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 600px){
     .todo{
         margin-top: 80px;
         flex-direction: column;
