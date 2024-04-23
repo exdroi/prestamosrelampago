@@ -104,8 +104,14 @@ label img{
         align-items: center;
     }
     label img{
+        transition: ease .250s;
         display: block;
         margin: 1rem;
+    }
+
+    header input:checked ~ label img{
+        transition: ease .250s;
+        transform: rotate(90deg);
     }
 
     .mostrar{
@@ -115,5 +121,6 @@ label img{
         justify-content: space-around;
         font-size: 2rem;
         margin-left: 0;
+
     }
 }
