@@ -118,9 +118,11 @@ label img{
         display: flex;
         flex-direction: column;
         height:calc(100vh - 80px);
-        justify-content: space-around;
+        justify-content: start;
         font-size: 2rem;
         margin-left: 0;
-
+    }
+    nav a{
+        margin-top: 3rem;
     }
 }
