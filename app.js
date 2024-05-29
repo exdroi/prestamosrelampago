@@ -56,6 +56,7 @@ function mostrar(){
         document.getElementById("nav").classList.remove('mostrar');
     }
 }
+
 window.__be = window.__be || {};
 window.__be.id = "6657b8d8c1c40c000770e554";
 (function() {
