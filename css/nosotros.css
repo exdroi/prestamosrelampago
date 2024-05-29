@@ -1,0 +1,128 @@
+/*Acordeon*/
+
+label{
+    color: #D27730;
+    font-size: 3rem;
+    font-weight: bold;
+}
+label:hover{
+    cursor: pointer;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.acordeon .menua{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.picado:checked ~ .menua{
+    max-height: 600px;
+    padding: 15px 0px;
+    transition: all ease 1s;
+}
+
+.picado:checked ~ label{
+    color: #018BA0;
+}
+
+.picado{
+    display: none;
+}
+
+.cont{
+    align-items: center;
+    justify-content: center;
+    width:min(600px,100%);
+}
+
+.cont > div{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.cont > div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #018BA0;
+    font-size: 2.5rem;
+}
+
+.cont > div a:hover{
+    color: var(--color);
+    transform: scale(1.01);
+    transform-origin: right;
+    transition: ease 0.25s;
+}
+
+/*Frame */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    padding: 30px;
+    width: 50%;
+}
+aside{
+    width: 50%;
+}
+iframe{
+    width: 100%;
+    height: 100vh;
+    background-color: #e5e3df;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.main  {
+    display: flex;
+    align-items: center;
+}
+.boton{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    body{
+        height: 100vh;
+    }
+    main{
+        padding-top: 100px;
+        width: 90%;
+        text-align: center;
+    }
+    aside{
+        display: none;
+    }
+    .boton{
+        display: flex;
+        width: 90%;
+    }
+    .boton a{
+        text-align: center;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 1.5rem;
+        margin-top: 20px;
+        width: 100%;
+        background-color: #018BA0;
+        color: white;
+        border: 0;
+        border-radius: 24px;
+    }
+}

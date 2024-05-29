@@ -1,17 +1,36 @@
 .bienvenida{
-    margin-left: 50%;
-    transform: translateX(-50%);
     display: flex;
-    width:min(1080px,100%);
+    justify-content: center;
+    width: 100%;
+}
+
+.todo{
+    margin-top: 80px;
+    width: min(1280px,100%);
+    height: calc(100vh - 80px);
+    overflow-y: hidden;
+}
+
+.todo section{
+    scroll-snap-align: start;
+    height: 100%;
+    margin: 1rem;
+    display: flex;
     align-items: center;
-    padding: 100px;
+    justify-content: center;
 }
 
-.cerdo{
-    transform: translateX(0) translateY(0);
+.todo section::-webkit-scrollbar {
+    display: none;
 }
 
-.degradado{
+.todo .texto{
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+}
+
+.todo section .imagen{
     display: flex;
     align-items: center;
     margin: 50px;
@@ -21,20 +40,40 @@
     border-radius: 24px;
 }
 
-.degradado img{
-    height: 40vh;
+.todo section img {
+    height: 30vh;
+    width: 100%;
     object-fit: contain;
 }
+
+.todo a{
+    text-decoration: none;
+    padding: 1rem;
+    border: 0.15rem var(--color) solid;
+    color: black;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.todo a:hover{
+    color: #e5e3df;
+    background-color: var(--color);
+}
+
+a,p{
+    margin-top: 1rem;
+}
+
+.cerdo{
+    transform: translateX(0) translateY(0);
+}
+.mensaje{
+    margin: 1rem;
+}
+
+
 @media only screen and (max-width: 600px){
-    .bienvenida{
-        justify-content: start;
+    .todo section {
         flex-direction: column;
-        padding-top: 80px;
-    }
-    .mensaje{
-        padding: 1rem;
-    }
-    .degradado{
-        margin: 1rem 0 0 0;
     }
 }

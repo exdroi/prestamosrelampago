@@ -19,7 +19,7 @@ img{
 }
 
 main{
-    marign: 1rem;
+    margin-left: 1rem;
     width: min(800px,100%);
 }
 
