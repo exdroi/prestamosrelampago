@@ -25,41 +25,38 @@
                     <img data-value="3" src="img/pig.png" alt="Cerdito">
                 </div>
             </section>
-            <section>
-                <div class="cotiza">
-                    <h1>Cotización de Crédito</h1>
-                    <form id="loanForm">
-                        <label for="amount">Monto del Crédito:</label>
-                        <input type="number" id="amount" name="amount" required>
-
-                        <label for="interest">Tasa de Interés (%):</label>
-                        <input type="number" id="interest" name="interest" step="0.01" required>
-
-                        <label for="years">Plazo (años):</label>
-                        <select id="years" name="years" required>
-                            <option value="" disabled selected>Seleccione el plazo</option>
-                            <option value="1">1 año</option>
-                            <option value="2">2 años</option>
-                            <option value="3">3 años</option>
-                            <option value="5">5 años</option>
-                            <option value="10">10 años</option>
-                            <option value="15">15 años</option>
-                            <option value="20">20 años</option>
-                        </select>
-
-                        <button class="bot" type="submit">Calcular</button>
-                    </form>
-
-                    <div id="result" class="hidden">
-                        <h2>Resultado de la Cotización</h2>
-                        <p id="monthlyPayment"></p>
-                        <p id="totalPayment"></p>
-                        <button id="downloadPDF">Descargar PDF</button>
-                    </div>
-                </div>
-            </section>
         </div>
     </main>
+    <div class="cotiza">
+        <h1>Cotización de Crédito</h1>
+        <form id="loanForm">
+            <label for="amount">Monto del Crédito:</label>
+            <input type="number" id="amount" name="amount" required>
 
+            <label for="interest">Tasa de Interés (%):</label>
+            <input type="number" id="interest" name="interest" step="0.01" required>
+
+            <label for="years">Plazo (años):</label>
+            <select id="years" name="years" required>
+                <option value="" disabled selected>Seleccione el plazo</option>
+                <option value="1">1 año</option>
+                <option value="2">2 años</option>
+                <option value="3">3 años</option>
+                <option value="5">5 años</option>
+                <option value="10">10 años</option>
+                <option value="15">15 años</option>
+                <option value="20">20 años</option>
+            </select>
+
+            <button class="bot" type="submit">Calcular</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Resultado de la Cotización</h2>
+            <p id="monthlyPayment"></p>
+            <p id="totalPayment"></p>
+            <button id="downloadPDF">Descargar PDF</button>
+        </div>
+    </div>
 </body>
 </html>
