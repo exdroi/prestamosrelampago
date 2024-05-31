@@ -46,7 +46,7 @@
     object-fit: contain;
 }
 
-.todo a, button{
+.todo a, button.bot{
     text-decoration: none;
     padding: 1rem;
     border: 0.15rem var(--color) solid;
@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-.todo a:hover, button:hover{
+.todo a:hover, button.bot:hover{
     color: #e5e3df;
     background-color: var(--color);
 }
