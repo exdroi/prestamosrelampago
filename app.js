@@ -64,3 +64,63 @@ window.__be.id = "6657b8d8c1c40c000770e554";
     be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
 })();
+
+//ventana emergente
+document.addEventListener('DOMContentLoaded', function() {
+    const popup = document.getElementById('popup');
+    const article = document.getElementById('article');
+    const closePopupButton = document.querySelector('.close');
+
+    article.addEventListener('click', function() {
+        popup.style.display = 'flex';
+    });
+
+    closePopupButton.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
+
+//cotizar
+document.addEventListener('DOMContentLoaded', function() {
+    const loanForm = document.getElementById('loanForm');
+    const resultDiv = document.getElementById('result');
+    const monthlyPaymentEl = document.getElementById('monthlyPayment');
+    const totalPaymentEl = document.getElementById('totalPayment');
+    const downloadPDFButton = document.getElementById('downloadPDF');
+
+    loanForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const amount = parseFloat(document.getElementById('amount').value);
+        const interest = parseFloat(document.getElementById('interest').value) / 100 / 12;
+        const years = parseInt(document.getElementById('years').value);
+        const payments = years * 12;
+
+        const x = Math.pow(1 + interest, payments);
+        const monthlyPayment = (amount * x * interest) / (x - 1);
+        const totalPayment = monthlyPayment * payments;
+
+        monthlyPaymentEl.textContent = `Pago Mensual: $${monthlyPayment.toFixed(2)}`;
+        totalPaymentEl.textContent = `Pago Total: $${totalPayment.toFixed(2)}`;
+
+        resultDiv.classList.remove('hidden');
+    });
+
+    downloadPDFButton.addEventListener('click', function() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.text("Resultado de la Cotización de Crédito", 10, 10);
+        doc.text(monthlyPaymentEl.textContent, 10, 20);
+        doc.text(totalPaymentEl.textContent, 10, 30);
+
+        doc.save('cotizacion_credito.pdf');
+    });
+});
+

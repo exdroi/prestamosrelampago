@@ -46,7 +46,7 @@
     object-fit: contain;
 }
 
-.todo a{
+.todo a, button{
     text-decoration: none;
     padding: 1rem;
     border: 0.15rem var(--color) solid;
@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-.todo a:hover{
+.todo a:hover, button:hover{
     color: #e5e3df;
     background-color: var(--color);
 }
@@ -76,4 +76,27 @@ a,p{
     .todo section {
         flex-direction: column;
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, button, select{
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
++
+.hidden {
+    display: none;
+}
+div.cotiza{
+    margin: auto;
+    margin-bottom: 5rem;
 }
