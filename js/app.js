@@ -16,8 +16,21 @@ customElements.define('barra-html',
     });
 
 
-/*cerdito mover*/
-
+window.addEventListener("load", function() {
+    const form = document.getElementById('forms');
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+            method: 'POST',
+            body: data,
+        })
+            .then(() => {
+                alert("Informacion enviada");
+            })
+    });
+});
 
 
 function mostrar(){
