@@ -97,6 +97,8 @@ input, button, select{
     display: none;
 }
 div.cotiza{
-    margin: auto;
+    width: min(1280px,90%);
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-bottom: 5rem;
 }
